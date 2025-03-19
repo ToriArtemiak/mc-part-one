@@ -79,10 +79,10 @@ void loop() {
   if (timeAtThisMoment - lastClickTime > clickInterval) clickCount = 0;
   lastButtonState = buttonState;
 
-  MainAlgorithm();
+  mainAlgorithm();
 }
 
-void MainAlgorithm() 
+void mainAlgorithm() 
 {
   if (millis() - lastUpdateTime >= updateInterval) return;
 
